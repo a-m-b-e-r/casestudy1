@@ -1,0 +1,70 @@
+---
+title: "Case Study 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# these libraries are needed to run this analysis
+library(dplyr)
+library(gtools)
+library(ggplot2)
+```
+
+## Introduction
+
+For Case Study I, Group B performed an analysis based on two datasets, gross domestic product of 190 ranked countries and education data.  The dataset comes from the world bank organization’s website. The two datasets have been combined and merged for the analysis. The data has merged based on the country short code, sorted in ascending order by GDP, and calculated the average GDP rankings for High income: nonOECD, High income: OECD, Low income, Lower middle income, and Upper middle income. For types of analysis performed, the GDP has been plotted and grouped into 5 separate quantile groups. 
+
+### First, we will download the data.
+
+```{r, tidy=TRUE}
+# Here we will set our working directory.
+setwd("/Users/amber/Google Drive/MSDS/Doing Data Science/casestudy/")
+
+# This file will download the data and store it as data frame variables.
+source("sources/gettingthedata.R",echo=TRUE,keep.source = TRUE)
+```
+
+### Next, we will look at the data and clean it up a bit.
+
+```{r, tidy=TRUE}
+# This file will subset the data and clean it up.
+source("sources/cleaningthedata.R",echo=TRUE,keep.source = TRUE)
+```
+
+### Then we'll merge the data.
+
+From the merged data we will see that 189 country codes were matched, and the 13th observation when the data is ordered by ascending GDP is the country St. Kitts and Nevits.
+
+For the High Income: OECD group, the average GDP is $1,483,917.13 and the average GDP ranking is 110.07.  
+For the High Income: non-OECD group, the average GDP is $104,249.83 and the average GDP ranking is 58.65.
+
+```{r, tidy=TRUE}
+# This file will merge the data.
+source("sources/mergingthedata.R",echo=TRUE,keep.source = TRUE)
+```
+
+## Plot of the data
+
+We use a bar chart and tables to look at the different income groups and GDPs.  
+
+```{r, tidy=TRUE}
+# This file will plot the data.
+source("sources/plottingthedata.R",echo=TRUE,keep.source = TRUE)
+```
+
+When the data is separated into quantiles, it can be seen that there are 5 countries with an income group of "Lower middle income" among the top 20% of nations with the highest GDP.
+
+
+## Conclusion
+
+The datasets were gathered from the world bank organization’s website. Then, it was cleansed and merged together. After those steps, the data was plotted and analyzed. Based on our analysis and plot, the income group that are the two highest are high income: OCED and lower middle income. Those two income groups are the outliers in this dataset. Refer to the key takeaways below for additional findings during this analysis. 
+
+Key Takeaways
+
+1.	189 out of the 190 country codes have matched  
+2.	St. Kitts is the 13th country in ascending order sorted by GDP.  
+3.  a.	High Income: OECD group, the average GDP is $1,483,917.13 and the average GDP ranking is 110.07  
+    b.	High Income: Non-OECD group, the average GDP $104,249,83 and the average GDP ranking is 58.65.   
+4.	Refer to the Plot above by Income Group  
+5.	There are 5 countries Lower middle income but among the top 20% of nations with the highest GDP. 
