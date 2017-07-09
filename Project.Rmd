@@ -58,13 +58,13 @@ When the data is separated into quantiles, it can be seen that there are 5 count
 
 ## Conclusion
 
-The datasets were gathered from the world bank organization’s website. Then, it was cleansed and merged together. After those steps, the data was plotted and analyzed. Based on our analysis and plot, the income group that are the two highest are high income: OCED and lower middle income. Those two income groups are the outliers in this dataset. Refer to the key takeaways below for additional findings during this analysis. 
+The datasets were gathered from the world bank organization’s website. Then, it was cleansed and merged together. After those steps, the data was plotted and analyzed. Based on our analysis and plot, the income groups that are the two highest are high income: OECD and lower middle income.  Refer to the key takeaways below for additional findings during this analysis. 
 
 Key Takeaways
 
 1.	189 out of the 190 country codes have matched  
-2.	St. Kitts is the 13th country in ascending order sorted by GDP.  
+2.	St. Kitts and Nevits is the 13th country in ascending order sorted by GDP.  
 3.  a.	High Income: OECD group, the average GDP is $1,483,917.13 and the average GDP ranking is 110.07  
-    b.	High Income: Non-OECD group, the average GDP $104,249,83 and the average GDP ranking is 58.65.   
-4.	Refer to the Plot above by Income Group  
-5.	There are 5 countries Lower middle income but among the top 20% of nations with the highest GDP. 
+    b.	High Income: Non-OECD group, the average GDP is $104,249.83 and the average GDP ranking is 58.65.   
+4.	Refer to the plot above by Income Group  
+5.	There are 5 countries in the Lower middle income group that are among the top 20% of nations with the highest GDP. 
