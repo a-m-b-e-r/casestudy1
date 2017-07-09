@@ -1,6 +1,6 @@
 ---
 title: "Case Study 1"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +19,7 @@ For Case Study I, Group B performed an analysis based on two datasets, gross dom
 
 ```{r, tidy=TRUE}
 # Here we will set our working directory.
-setwd("/Users/amber/Google Drive/MSDS/Doing Data Science/casestudy/")
+setwd("/Users/amber/Google Drive/MSDS/Doing Data Science/casestudy1/")
 
 # This file will download the data and store it as data frame variables.
 source("sources/gettingthedata.R",echo=TRUE,keep.source = TRUE)
